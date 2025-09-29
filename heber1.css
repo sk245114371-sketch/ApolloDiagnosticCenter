@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  background: #eaf5fb;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  align-self: center;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #201818;
+  font-weight: 500;
+  transition: 0.3s;
+  
+}
+
+nav ul li a:hover {
+  color: #ffda79;
+}
+.form-wrap {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 700px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2f6b91;
+}
+
+label {
+  display: block;
+  margin: 10px 0 6px;
+  font-size: 14px;
+  color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.row-two,
+.row-three {
+  display: grid;
+  gap: 12px;
+}
+
+.row-two {
+  grid-template-columns: 1fr 1fr;
+}
+
+.row-three {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.checkbox-list {
+  display: grid;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.submit-btn {
+  background: #2f6b91;
+  color: #fff;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.submit-btn:hover {
+  background: #24506c;
+}
+
+.hidden-label {
+  visibility: hidden;
+}
+
+@media (max-width: 600px) {
+  .row-two, .row-three {
+    grid-template-columns: 1fr;
+  }
+}

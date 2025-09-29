@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Instagram & Mail Symbols</title>
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #f4f4f4;
+    }
+    .icons {
+      display: flex;
+      gap: 20px;
+    }
+    .icons a {
+      font-size: 40px;
+      text-decoration: none;
+      color: #333;
+      transition: 0.3s;
+    }
+    .icons a:hover {
+      color: #e1306c; /* Instagram pink */
+    }
+    .icons a.mail:hover {
+      color: #0072c6; /* Mail blue */
+    }
+  </style>
+</head>
+<body>
+  <div class="icons">
+    <!-- Instagram -->
+    <a href="https://www.instagram.com/your_username" target="_blank">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <!-- Mail -->
+    <a href="mailto:your.email@example.com" class="mail">
+      <i class="fas fa-envelope"></i>
+    </a>
+  </div>
+</body>
+</html>

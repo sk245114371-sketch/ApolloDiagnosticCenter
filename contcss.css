@@ -1,0 +1,58 @@
+/* Basic page layout */
+:root {
+  --max-width: 900px;
+  --gap: 16px;
+  --bg: #f7f7f9;
+  --card-bg: #ffffff;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: var(--bg);
+  color: #111;
+  line-height: 1.4;
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+/* Centering container */
+
+
+/* Image card */
+.image-card {
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 1px;
+  box-shadow: 0 6px 20px rgba(16,24,40,0.06);
+  display: inline-block;
+  text-align: center;
+}
+
+/* Responsive image *
+.responsive-img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Caption */
+.caption {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+/* Small-screen tweak */
+@media (max-width: 420px) {
+  .page { padding: 8px; }
+  .image-card { padding: 8px; border-radius: 8px; }
+  .caption { font-size: 0.9rem; }
+}
